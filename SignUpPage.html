@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <style>
+        * {
+            font-family: irancell, sans-serif;
+        }
+
+        body {
+            /*font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
+            background-color: #f1f8e9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            max-width: 450px;
+            width: 80%;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 40px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+            width: 100%;
+        }
+
+        .form-group label {
+            display: block;
+            color: #666;
+            margin-bottom: 5px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .form-group input:focus {
+            border-color: #28a745;
+            outline: none;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .buttons button {
+            font-size: 16px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            flex: 1;
+            margin: 0 5px;
+        }
+
+        .buttons button:hover {
+            background-color: #218838;
+        }
+
+        #choices {
+            width: 100%;
+        }
+
+        .options {
+            display: flex;
+            width: 100%;
+        }
+
+        a.option {
+            text-decoration: none;
+            color: black;
+            font-size: 14px;
+            display: inline-block;
+            flex: 1;
+            text-align: center;
+            margin: 15px 5px 0 5px;
+            padding: 8px 0;
+            border-radius: 5px;
+            background-color: #f1f8e9;
+        }
+
+        a.option:hover {
+            background-color: #dcedc8;
+        }
+    </style>
+    </style>
+</head>
+<body dir="rtl">
+<div class="container">
+    <h2>ثبت نام</h2>
+    <div class="form-group">
+        <label for="signup-username">نام کاربری</label>
+        <input type="text" id="signup-username" placeholder="نام کاربری را وارد کنید">
+    </div>
+    <div class="form-group">
+        <label for="choices">انتخاب نقش</label>
+        <select id="choices" class="dropdown">
+            <option value="option1">طراح</option>
+            <option value="option2">بازیکن</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="signup-email">ایمیل</label>
+        <input type="email" id="signup-email" placeholder="ایمیل را وارد کنید">
+    </div>
+    <div class="form-group">
+        <label for="signup-password">رمز عبور</label>
+        <input type="password" id="signup-password" placeholder="رمز عبور را وارد کنید">
+    </div>
+    <div class="buttons">
+        <button type="button" onclick="window.location.href='ConfirmPage.html'">ثبت نام</button>
+    </div>
+    <div class="options">
+        <a class="option" href="LogInPage.html">ورود</a>
+    </div>
+</div>
+</body>
+</html>
