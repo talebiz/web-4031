@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ایجاد سوال</title>
+    <link rel="stylesheet" href="Styles.css">
+    <link rel="stylesheet" href="Styles2.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="HomePage.html">صفحه اصلی</a>
+    <a href="ProfileInformationPage.html">اطلاعات کاربری</a>
+    <a href="PersonalProfilePage.html">پروفایل شخصی</a>
+    <a href="SearchUserPage.html">جستجوی کاربر</a>
+    <a href='LogInPage.html'>خروج</a>
+</nav>
+<form style="margin-top: 100px">
+    <h1>ایجاد سوال</h1>
+    <label for="question">سوال:</label>
+    <input type="text" id="question" name="question">
+
+
+    <label for="category">دسته بندی:</label>
+    <select id="category" name="category">
+        <option value="0">دسته بندی را انتخاب کنید</option>
+        <option value="1">ریاضی</option>
+        <option value="2">فیزیک</option>
+        <option value="3">شیمی</option>
+        <option value="4">زیست شناسی</option>
+        <option value="5">ادبیات</option>
+    </select>
+    <div class="category-box">
+        <button id="add-category">اضافه کردن دسته بندی جدید:</button>
+        <input type="text" id="choose-category">
+    </div>
+
+    <label for="option1">گزینه ها:</label>
+    <input type="text" id="option1" name="option1" placeholder="گزینه 1">
+    <input type="text" id="option2" name="option2" placeholder="گزینه 2">
+    <input type="text" id="option3" name="option3" placeholder="گزینه 3">
+    <input type="text" id="option4" name="option4" placeholder="گزینه 4">
+
+    <label for="correct-answer">پاسخ صحیح:</label>
+    <select id="correct-answer" name="correct-answer">
+        <option value="1">گزینه 1</option>
+        <option value="2">گزینه 2</option>
+        <option value="3">گزینه 3</option>
+        <option value="4">گزینه 4</option>
+    </select>
+    <button type="button">ایجاد</button>
+</form>
+
+</body>
+</html>
